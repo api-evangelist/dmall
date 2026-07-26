@@ -1,7 +1,26 @@
 aid: dmall
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dmall.png
 name: DMall
-description: 'DMall is a company surfaced as a portfolio company of idg-capital and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'DMall (多点数智, Dmall Inc.) is an Asia-Pacific retail digitalization service
+  provider that pairs consulting with technology to deliver an all-in-one digital retail
+  operating system for supermarkets, grocery chains, and other retailers. Its cloud-native
+  SaaS platform (Dmall OS) spans supply chain, point-of-sale, store operations, membership,
+  e-commerce, and O2O fulfillment, helping traditional retailers modernize into data-driven
+  omnichannel businesses. The company is backed by IDG Capital among other investors. DMall
+  does not currently publish a public developer portal, open-platform documentation, or
+  machine-readable API specifications; this profile captures its public web identity and
+  domain security posture while awaiting a documented API surface.'
 url: https://raw.githubusercontent.com/api-evangelist/dmall/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,13 +30,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Retail
+- E-Commerce
+- SaaS
+- Digital Retail
+- Supply Chain
+- China
+common:
+- type: DomainSecurity
+  url: security/dmall-domain-security.yml
+- type: Website
+  url: https://www.dmall.com
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
